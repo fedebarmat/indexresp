@@ -1,0 +1,221 @@
+@font-face{
+   font-family: "DIN Next HC";
+   src: url("../fonts/DINNextLTPro-HeavyCondensed.ttf");
+ }
+
+* {
+  font-family: "DIN Next HC";  
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #1a5127;
+  font-family: sans-serif;
+  padding: 0px 0;
+  box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.75);
+}
+
+.header {
+  background-color: transparent;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.text-logo{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 15px;
+}
+
+.logo-nombre{
+     margin-left: 5px;
+     display: flex;
+     align-items: center;
+ }
+
+.personaje{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #1a5127;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 15px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 15px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #1a5127;
+  transition: 0.5s;
+}
+
+section{
+    max-width: 1200px;
+    height: 700px;
+    background-image: url(../img/hulkindex.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 29px;
+    color: white;
+}
+
+h2{
+    font-size: 200px;
+    color: #1a5127;
+    margin-left: 15px;
+    -webkit-text-stroke: 3px #000;
+}
+
+.hulk-title {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+     max-width:  1200px;
+     height: 50px;
+     background-color: #000;
+     display: flex;
+     justify-content: space-between;
+ }
+
+.ucesmarvel{
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     margin-left: 15px;
+}
+
+.marvel{
+    margin-left: 10px;
+}
+
+.disneyplus{
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     margin-right: 15px;
+ }
+
+.nombre{
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* TOGGLE */
+.nav-toggle {
+  color: #1a5127;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 80px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .header {
+    height: 60px;
+  }
+
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #1a5127;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+.nombre{
+    font-size: 10px;
+}
